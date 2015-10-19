@@ -4,8 +4,11 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ListView;
 
 import gitmad.bitter.R;
@@ -36,6 +39,20 @@ public class FeedActivity extends ActionBarActivity {
         adapter = new PostAdapter(posts);
         recyclerView.setAdapter(adapter);
     }
+
+
+    //private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
+        //@Override
+        //public void onClick(View v) {
+            /*public MyViewHolder onCreateViewHolder(final ViewGroup parent, final int position) {
+                View view = LayoutInflater.from(mContext).inflate(R.layout.myview, parent, false);
+                view.setOnClickListener(mOnClickListener);
+                return new MyViewHolder(view);
+            }
+
+        }
+    }*/
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

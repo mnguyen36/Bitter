@@ -64,15 +64,21 @@
 
 
             <!-- This text view will become the downvote button-->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:padding="20dp"
+                android:scaleType="fitXY"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/downvote_button"
-                android:text="button"
-                android:layout_centerVertical="true"
+                android:src="@drawable/downvote"
                 android:layout_alignParentRight="true"
-                />
+                android:layout_alignBottom="@+id/post_text"
+                android:layout_alignTop="@+id/post_text"
+                android:layout_alignLeft="@+id/user_text"
+                android:layout_alignStart="@+id/user_text" />
+
 
         </RelativeLayout>
 
