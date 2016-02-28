@@ -1,8 +1,11 @@
 package gitmad.bitter.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 /**
  * Created by brian on 9/21/15.
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Post {
     private String id;
     private String text;
