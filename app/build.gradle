@@ -35,5 +35,7 @@ dependencies {
     compile 'com.android.support:support-v13:23.1.1'
     compile "com.android.support:support-v4:23.1.1"
     compile 'com.firebase:firebase-client-android:2.5.0'
+    compile group: 'com.google.guava', name: 'guava', version: '15.0'
+
     androidTestCompile 'junit:junit:4.12'
 }
